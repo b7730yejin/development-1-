@@ -17,9 +17,9 @@
 }
 .search-area{
     grid-area: search-area;
-    height: 40px;
+    height: 30px;
     width: 250px;
-    margin-top: 145px;
+    margin-top: 150px;
     margin-left: 300px;
     border: 2px solid rgb(126, 126, 139);
     background: white;
@@ -147,7 +147,7 @@ a:hover{
     
 }
 
-/*검색창 설정*/
+/*검색창 버튼 설정*/
 button.s_button{
     font-size: 16px;
     width: 60px;
@@ -160,10 +160,12 @@ button.s_button{
    border-radius: 0;
    cursor: pointer;
 }
+
+/*검색창 설정*/
 input.m_search{
-    font-size: 20px;
+    font-size: 16px;
     width : 180px;
-    height: 38px;
+    height: 28px;
     border: 0px;
     outline: none;
     float: left;
