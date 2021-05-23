@@ -1,0 +1,118 @@
+<!--회원가입-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Coffee</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+    <div class="header">
+        <div class="login-area">
+            <a href="#" class="loginLink" onclick="openLogin();">로그인</a>
+            <a href="join.html" class="joinLink">회원가입</a>
+        </div>
+        <div class="title-area">
+            <a href="index.html">
+                <img src="https://github.com/b7730yejin/development-1-/blob/main/better_coffee.png?raw=true"  class="title_img" alt="타이틀" usemap="#title_map">
+            </a>
+        </div>
+        <div class="search-area">
+            <input type="text" class="m_search" placeholder="메뉴 검색">
+            <button class="s_button" onclick="menu_search();">검색</button>
+        </div>
+    </div>
+    <div class="menu-area"></div>
+    <div class="joinForm">
+        <h1>Better Coffee 회원가입</h1>
+        <fieldset>
+            <legend>정보 입력</legend>
+            <div class="joinInform1">
+                <form>
+                    <ul>
+                        <li>
+                            <label>아이디</label>
+                            <input type="text" id="u_id" placeholder="6~20자 영문,숫자" minlength="6" maxlength="20">     
+                            <br>
+                        </li>
+                        <li>
+                            <label>비밀번호</label>
+                            <input type="password" id="u_id" placeholder="8~12자 영문,숫자, 특수문자" minlength="8" maxlength="12">    
+                           <br>
+                        </li>
+                        <li>
+                            <label>비밀번호 확인</label>
+                            <input type="password" id="u_id" placeholder="8~12자 영문,숫자, 특수문자" minlength="8" maxlength="12">    
+                            <br>
+                        </li>
+                        <li>
+                            <label>이름</label>
+                            <input type="text" id="u_id"> 
+                            <br>
+                        </li>
+                        <li>
+                            <label>이메일</label>
+                            <input type="email" id="email" placeholder="" >
+                            <select id="e_domain" onchange="domainSelect();">
+                                <option value="0">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="duam.net">duam.net</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="yahoo.com">yahoo.com</option>
+                            </select>
+                            <br>
+                        </li>
+                        <li>
+                            <label>휴대폰</label>
+                            <input type="tel" id="u_id" placeholder="010 1234 5678" > 
+                            <br>
+                        </li> 
+                        <li>
+                            <label>개인정보 유효기간 : </label>
+                            <label><input type="radio" name="s_radio">1년</label>
+                            <label><input type="radio" name="s_radio">탈퇴 시까지</label>
+                            <br>
+                        </li>                 
+                      </ul>
+                </form>
+            </div>
+            <br>
+            <div class="joinInform2">
+                <label><input type="checkbox" name="">SMS, 이메일로 상품 및 이벤트 정보를 받겠습니다.(선택)</label>
+                <br>
+                <label><input type="checkbox" name="">14세 미만입니다.</label> 
+                <br>
+                <button onclick="joinsumit();">가입 완료</button> 
+            </div>
+        </fieldset>
+    </div>
+</body>
+<script>
+    //검색 버튼 클릭시 
+    function menu_search(){
+        alert("확인");
+    }
+    //로그인 팝업창 열기
+    function openLogin(){
+        window.open("login.html", "a", "width=400, height=255, left=300, top=300" );
+    }
+    //도메인 선택 
+    function domainSelect(){
+        if(e_domain.value != 0){
+            email.value= "@" + e_domain.value;
+        }
+        else{
+            email.value= "";
+        }
+    }
+    //가입 완료 버튼 클릭시
+    function joinsumit(){
+        alert("가입 완료");
+        location.href="index.html";
+    }
+</script>
+</html>
