@@ -1,0 +1,97 @@
+/*레이아웃*/
+.header{
+    display: grid;
+    height: 200px;
+    width: 1845px;
+    grid-template-columns: repeat(3, 615px);
+    grid-template-areas: 
+    "login-area title-area search-area";
+}
+.login-area{
+    margin-top: 165px;
+    grid-area: login-area;
+    margin-left: 60px;
+}
+.title-area{
+    grid-area: title-area;
+}
+.search-area{
+    grid-area: search-area;
+    height: 40px;
+    width: 250px;
+    margin-top: 145px;
+    margin-left: 300px;
+    border: 2px solid rgb(126, 126, 139);
+    background: white;
+   
+}
+.menu-area{
+    height: 60px;
+    width: 1845px;
+    background-color: forestgreen;
+}
+.img-area{
+    height: 400px;
+    width: 1845px;
+    background-color: rgb(156, 156, 156);
+}
+.text-area{
+    height: 800px;
+    width: 1845px;
+    text-align: center;
+}
+
+/*로그인 하이퍼링크 설정*/
+a.loginLink{
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*회원가입 하이퍼링크 설정*/
+a.joinLink{
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+a:link{
+    color:  rgb(70, 69, 69);
+}
+a:visited{
+    color:  rgb(70, 69, 69);
+}
+a:hover{
+    color: rgb(47, 179, 135);
+}
+
+/*타이틀 이미지 설정*/
+.title_img{
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    height: 180px;
+    object-fit: contain;
+}
+/*검색창 버튼 설정*/
+button.s_button{
+    font-size: 16px;
+    width: 60px;
+    height: 100%;
+    border : 0px;
+    outline: none;
+   background: rgb(126, 126, 139);
+   color: white;
+   float: right;
+   border-radius: 0;
+   cursor: pointer;
+}
+
+/*검색창 설정*/
+input.m_search{
+    font-size: 20px;
+    width : 180px;
+    height: 38px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
