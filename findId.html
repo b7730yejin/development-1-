@@ -45,7 +45,7 @@
                 <form>
     
                     <li>
-                        <input type="text" class="i_n" id="f_name" placeholder="이름">
+                        <input type="text" class="i_n" id="f_name" placeholder="이름" autofocus>
                     </li>
                     <li>
                         <input type="email" id="f_email" class="email" placeholder="이메일">
@@ -91,11 +91,11 @@
         }
         //도메인 선택 
         function domainSelect(){
-            if(e_domain.value != 0){
-                email.value= "@" + e_domain.value;
+            if(f_domain.value != 0){
+                f_email.value= "@" + f_domain.value;
             }
             else{
-                email.value= "";
+                f_email.value= "";
             }
         }
     </script>
