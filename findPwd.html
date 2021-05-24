@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>아이디/비밀번호 찾기</title>
+        <link rel="stylesheet" href="findPwd.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="login-area">
+                <a href="#" class="loginLink" onclick="openLogin();">로그인</a>
+                <a href="join.html" class="joinLink">회원가입</a>
+            </div>
+            <div class="title-area">
+                <a href="index.html">
+                    <img src="https://github.com/b7730yejin/development-1-/blob/main/better_coffee.png?raw=true"  class="title_img" alt="타이틀" usemap="#title_map">
+                </a>
+            </div>
+            <div class="search-area">
+                <input type="text" class="m_search" placeholder="메뉴 검색">
+                <button class="s_button" onclick="menu_search();">검색</button>
+            </div>
+        </div>
+        <div class="menu-area"></div>
+
+        <div class="findId_head">
+            <h1>아이디/비밀번호 찾기</h1>
+        </div>
+        <div class="empt1">
+            <div class="findId_select">
+                <div class="select_id">
+                    <a href="findId.html" class="f_link">아이디</a>
+                </div>
+                <div class="select_pwd">
+                    <a href="findPwd.html" class="f_link">비밀번호</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="empt2">
+            <div class="findId_id">
+                <form>
+                    <li>
+                        <input type="text" class="i_n" id="f_id" placeholder="아이디">
+                    </li>
+                    <li>
+                        <input type="text" class="i_n" id="f_name" placeholder="이름">
+                    </li>
+                    <li>
+                        <input type="email" id="f_email" class="email" placeholder="이메일">
+                        <select id="f_domain" onchange="domainSelect();">
+                            <option value="0">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="duam.net">duam.net</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="yahoo.com">yahoo.com</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button class="f_button">인증메일 전송</button>
+                    </li> 
+                </form>
+            </div> 
+        </div>
+    </body>
+    <script>
+        //검색 버튼 클릭시 
+        function menu_search(){
+            alert("확인");
+        }
+        //로그인 팝업창 열기
+        function openLogin(){
+            window.open("login.html", "a", "width=400, height=255, left=300, top=300" );
+        }
+        //도메인 선택 
+        function domainSelect(){
+            if(e_domain.value != 0){
+                email.value= "@" + e_domain.value;
+            }
+            else{
+                email.value= "";
+            }
+        }
+        //가입 완료 버튼 클릭시
+        function joinsumit(){
+            alert("가입 완료");
+            location.href="index.html";
+        }
+        //도메인 선택 
+        function domainSelect(){
+            if(e_domain.value != 0){
+                email.value= "@" + e_domain.value;
+            }
+            else{
+                email.value= "";
+            }
+        }
+    </script>
+</html>
