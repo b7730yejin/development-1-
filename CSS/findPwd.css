@@ -1,0 +1,95 @@
+.findId_head{  
+    width: 1900px;
+    height: 50px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.findId_select{
+    margin: 0 702px; 
+    display: grid;
+    width: 500px;
+    grid-template-areas: 
+    "select_id select_pwd";
+    justify-items: center;
+   
+}
+.select_id{  
+    grid-area: select_id;
+    width: 100%;
+    height: 30px;
+    float: right;
+    border-bottom: 2px solid rgb(202, 199, 199);;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.select_pwd{
+    grid-area: select_pwd;
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-top: 2px solid rgb(202, 199, 199);;
+    border-left: 2px solid rgb(202, 199, 199);;
+    border-right: 2px solid rgb(202, 199, 199);;
+    padding-top: 20px;
+    text-align: center;
+}
+.find_info{
+    margin: 0 700px;
+    width: 500px;
+    height: 240px;
+    border-bottom: 2px solid rgb(202, 199, 199);;
+    border-left: 2px solid rgb(202, 199, 199);;
+    border-right: 2px solid rgb(202, 199, 199);;
+    padding-top: 60px;
+    
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 28px;
+    color: rgb(80, 80, 80);
+}
+li{
+    list-style: none;
+    float: left;
+}
+
+/*입력창 설정*/
+input.i_n{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border: 2px solid rgb(192, 188, 188);   
+    border-radius: 5px;  
+}
+input.email{
+    width: 300px;
+    height: 30px;
+    margin-left: 50px;  
+    border: 2px solid rgb(192, 188, 188);   
+    border-radius: 5px;     
+}
+select{
+    height: 33px;
+    border: 2px solid rgb(192, 188, 188);   
+    border-radius: 5px;  
+    background-color: rgb(238, 237, 237);  
+}
+
+/*아이디, 비밀번호 하이퍼링크 설정*/
+a.f_link{
+    text-decoration: none;
+    
+}
+button.f_button{
+    width: 410px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 20px;  
+    height: 40px;
+}
