@@ -32,7 +32,7 @@
 .img-area{
     height: 400px;
     width: 1900px;
-    background-color: rgb(156, 156, 156);
+    text-align: center;
 }
 .text-area{
     height: 800px;
@@ -93,4 +93,9 @@ input.m_search{
     border: 0px;
     outline: none;
     float: left;
+}
+#banner{
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
 }
