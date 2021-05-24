@@ -1,13 +1,16 @@
-<!--로그인 팝업-->
+<!--로그인 팝업창-->
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <title>Better coffee 로그인</title>
 </head>
+<script type="text/javascript" src="JS/index.js"></script>
+
 <body>
     <form>
         <fieldset>
@@ -17,30 +20,17 @@
                     <input type="text" id="u_id" placeholder="아이디">
                 </li>
                 <li>
-                     <input type="password" id="u_pwd" placeholder="비밀번호">
+                    <input type="password" id="u_pwd" placeholder="비밀번호">
                 </li>
                 <li>
-                    <button id="u_pwd">로그인</button> 
-               </li>
-               <li>
-                <a href="#" class="findId" onclick="goFindId();">아이디/비밀번호 찾기</a>
-                <a href="#" class="goJoin" onclick="goJoin();">회원가입</a>
-           </li>
+                    <button id="u_pwd">로그인</button>
+                </li>
+                <li>
+                    <a href="#" class="findId" onclick="goFindId();">아이디/비밀번호 찾기</a>
+                    <a href="#" class="goJoin" onclick="goJoin();">회원가입</a>
+                </li>
             </ul>
         </fieldset>
-    </form>    
+    </form>
 </body>
-<script>
-
-    //로그인 팝업창을 닫고 회원가입창으로 이동
-    function goJoin(){
-        opener.location.replace("join.html");
-        window.close();
-    }
-    //로그인 팝업창을 닫고 아이다/비밀번호 찾기창으로 이동
-    function goFindId(){
-        opener.location.replace("findId.html");
-        window.close();
-    }
-</script>
 </html>
