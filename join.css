@@ -2,7 +2,7 @@
 .header{
     display: grid;
     height: 200px;
-    width: 1845px;
+    width: 1900px;
     grid-template-columns: repeat(3, 615px);
     grid-template-areas: 
     "login-area title-area search-area";
@@ -20,25 +20,25 @@
     height: 30px;
     width: 250px;
     margin-top: 150px;
-    margin-left: 300px;
+    margin-left: 350px;
     border: 2px solid rgb(126, 126, 139);
     background: white;
 }
 .menu-area{
     height: 60px;
-    width: 1845px;
+    width: 1900px;
     background-color: forestgreen;
 }
 .joinForm{
+   
     height: 1000px;
-    width: 1845px;
+    width: 1900px;
     text-align: center;
 }
 .joinInform1{
     display: inline-block;
     left: 300px;
     margin-top: 0px;
-    
 }
 .joinInform2{
     display: inline-block;
@@ -51,7 +51,9 @@
 fieldset {
     display: inline-block;
     width: 600px;
-    margin: 30px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     padding: 30px;
 }
 h1{
@@ -81,7 +83,6 @@ label{
 /*input 요소 설정*/
 .joinInform1 input{
    float: left;
-  
    font-size: 15px;
    border: 0px;
    outline: none;
