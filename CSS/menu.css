@@ -1,0 +1,63 @@
+.menu-area{
+    margin-top: 30px;
+    justify-items: center;
+    height: 55px;
+    width: 1900px;
+    
+}
+.center{
+    display: grid;
+    margin: 0 auto;
+    padding-top: 14px ;
+    width: 1000px;
+    height: 30px;
+    text-align: center;
+    grid-template-areas: 
+    "story cf_menu info order customer";
+}
+.story{
+    display: inline-block;
+    grid-area: story;
+    width: auto;
+    height: 100%;
+    
+}
+.cf_menu{
+    display: inline-block;
+    grid-area: cf_menu;
+    width: auto;
+    height: 100%;
+   
+}
+.info{
+    
+    display: inline-block;
+    grid-area: info;
+    width: auto;
+    height: 100%;
+    
+}
+.order{
+  
+    display: inline-block;
+    grid-area: order;
+    width: auto;
+    height: 100%;
+    
+}
+.customer{
+    display: inline-block;
+    grid-area: customer;
+    width: auto;
+    height: 100%;
+}
+button.menu_button{
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    width: 180px;
+    border: 0px;
+    background-color: rgba(0, 0, 139, 0);
+    color: rgb(102, 67, 39);
+    cursor: pointer;
+}

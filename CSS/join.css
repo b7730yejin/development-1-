@@ -26,14 +26,26 @@ fieldset {
     margin-top: 30px;
     padding: 30px;
 }
-h1{
-    margin-top: 50px;
-    font-size: 28px;
+legend{
+     font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+h1.news_title{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 100px;
+    margin-top: 80px;
+    font-size: 38px;
     color: rgb(80, 80, 80);
 }
 p{
     float: left;
     border: 1px solid bisque;
+}
+hr{
+    margin-top: 20px;
+    width: 1800px;
 }
 
 /*리스트 설정*/
@@ -47,6 +59,7 @@ ul li{
     border-bottom: 2px solid rgb(182, 181, 181);
 }
 label{
+    
     float: left;
 }
 

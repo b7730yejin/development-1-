@@ -1,36 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
 /*레이아웃*/
 .header{
     display: grid;
-    height: 200px;
+    height: 150px;
     width: 1900px;
     grid-template-columns: repeat(3, 615px);
     grid-template-areas: 
     "login-area title-area search-area";
 }
 .login-area{
-    margin-top: 165px;
+    margin-top: 100px;
     grid-area: login-area;
-    margin-left: 60px;
+    margin-left: 70px;
+    
 }
 .title-area{
     grid-area: title-area;
+    justify-items: center;
+   
 }
 .search-area{
     grid-area: search-area;
-    height: 30px;
+    height: 32px;
     width: 250px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 350px;
     border: 2px solid rgb(126, 126, 139);
     background: white;
 }
-.menu-area{
-    height: 60px;
-    width: 1900px;
-    background-color: forestgreen;
-}
 .img-area{
-    height: 400px;
+    height: 500px;
     width: 1900px;
     text-align: center;
 }
@@ -38,20 +75,29 @@
     height: 800px;
     width: 1900px;
     text-align: center;
+    
+}
+.index_text{
+    margin: 0 auto;
+    height: 100%;
+    width: 900px;
+  
+}
+p.text{
+    text-align: left;
 }
 
-/*로그인 하이퍼링크 설정*/
+h1{
+    font-family: 'Gamja Flower', cursive;
+}
+
+/*로그인&회원가입 하이퍼링크 설정*/
 a.loginLink{
-    font-size: 18px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
     text-decoration: none;
-    margin-right: 20px;
-}
-
-/*회원가입 하이퍼링크 설정*/
-a.joinLink{
-    font-size: 18px;
-    text-decoration: none;
-    margin-right: 20px;
+    margin-right: 30px;
+    font-weight: bold;
 }
 a:link{
     color:  rgb(70, 69, 69);
@@ -65,16 +111,15 @@ a:hover{
 
 /*타이틀 이미지 설정*/
 .title_img{
-    display: block;
-    margin: 10px auto;
-    width: 500px;
-    height: 180px;
+    width: 250px;
+    margin-left: 225px;
+    height: 100%;
     object-fit: contain;
 }
 /*검색창 버튼 설정*/
 button.s_button{
-    font-size: 16px;
-    width: 60px;
+    font-size: 20px;
+    width: 35px;
     height: 100%;
     border : 0px;
     outline: none;
@@ -84,18 +129,18 @@ button.s_button{
    border-radius: 0;
    cursor: pointer;
 }
-
 /*검색창 설정*/
 input.m_search{
-    font-size: 16px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
     width : 180px;
-    height: 28px;
+    height: 30px;
     border: 0px;
     outline: none;
     float: left;
 }
 #banner{
-    width: 500px;
-    height: 400px;
-    object-fit: contain;
+   width: 1900px;
+   height: 500px;
+    object-fit: cover;
 }
