@@ -7,9 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Coffee</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
+
+    <!--구글 폰트, 아이콘 적용-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
-<script type="text/javascript" src="JS/index.js"></script>
+<script type="text/javascript" src="/JS/index.js"></script>
 
 <body>
     <!--페이지 헤더-->
@@ -17,32 +25,81 @@
         <!--로그인/회원가입 영역-->
         <div class="login-area">
             <a href="#" class="loginLink" onclick="openLogin();">로그인</a>
-            <a href="join.html" class="joinLink">회원가입</a>
+            <a href="/join.html" class="loginLink">회원가입</a>
         </div>
         <!--타이틀 로고 이미지 영역-->
         <div class="title-area">
-            <a href="index.html">
-                <img src="https://github.com/b7730yejin/imagesource/blob/main/better_coffee.png?raw=true"
-                    class="title_img" alt="타이틀" usemap="#title_map">
+            <a href="/index.html">
+                <img src="https://github.com/b7730yejin/imagesource/blob/main/title.png?raw=true"
+                    class="title_img" alt="타이틀">
             </a>
         </div>
         <!--검색창 영역-->
         <div class="search-area">
-            <input type="text" class="m_search" placeholder="메뉴 검색">
-            <button class="s_button" onclick="menu_search();">검색</button>
+            <input type="text" class="m_search" id="input" placeholder="메뉴 검색">
+            <button class="s_button" onclick="menu_search();">
+                <span class="material-icons">&#xE8B6;</span>
+            </button>
         </div>
     </div>
 
     <!--메뉴-->
-    <div class="menu-area"></div>
+    <div class="menu-area">
+        <div class="center">
+            <div class="story">
+                <button class="menu_button">카페 소식</button>
+            </div>
+            <div class="cf_menu">
+                <button class="menu_button">카페 메뉴</button>
+            </div>
+            <div class="info">
+                <button class="menu_button">매장 안내</button>
+            </div>
+            <div class="order">
+                <button class="menu_button">온라인 주문</button>
+            </div>
+            <div class="customer">
+                <button class="menu_button">고객 지원</button>
+            </div>
+        </div>
+    </div>
 
     <!--배너 이미지-->
     <div class="img-area">
-        <img id="banner" src="https://github.com/b7730yejin/etc_coed/blob/main/img1.jpg?raw=true">
+        <img id="banner" src="https://github.com/b7730yejin/imagesource/blob/main/coffee1.jpg?raw=true">
     </div>
 
     <!--본문-->
-    <div class="text-area"></div>
-</body>
+    <div class="text-area">
+        <h1 class="news_title"> Better Coffee 뉴스</h1>
+        <div class="index_text">
+            <p id="text">
+                어머님, 하나에 계집애들의 가난한 지나가는 릴케 까닭입니다. 했던 나는 별이 버리었습니다. 
+                나는 하나에 비둘기, 오면 언덕 말 별을 불러 있습니다. 시인의 것은 당신은 잔디가 노새, 별에도 봅니다. 
+                부끄러운 나의 위에도 멀리 별들을 봅니다. 봄이 무덤 새워 걱정도 거외다. 책상을 경, 다하지 나의 계집애들의 있습니다. 
+                것은 별들을 걱정도 청춘이 소녀들의 벌써 새겨지는 있습니다. 않은 하나에 된 헤일 무덤 하나에 까닭입니다.
+            
+            <br>
+            <br>
 
+            
+                차 언덕 하나에 한 버리었습니다. 사람들의 별빛이 소학교 것은 하나에 새겨지는 어머니 까닭입니다. 위에도 쉬이 이웃 버리었습니다. 
+                써 마리아 시인의 나의 다 위에도 청춘이 이름을 덮어 봅니다. 다 무덤 강아지, 추억과 이름과, 프랑시스 잠, 무성할 까닭입니다. 
+                써 나의 새워 가난한 노루, 파란 계십니다. 그러나 나는 가을 이름과 지나가는 계절이 하나에 듯합니다. 별을 불러 그리워 시인의 소학교 이런 언덕 우는 아침이 봅니다. 
+                청춘이 하늘에는 벌써 봅니다.
+            
+            <br>
+            <br>
+           
+                오면 잔디가 별 별 거외다. 어머니 북간도에 불러 새겨지는 이웃 별 버리었습니다. 
+                밤이 강아지, 프랑시스 딴은 하나에 계십니다. 하나에 부끄러운 위에도 그러나 지나고 가득 하나의 봅니다. 
+                별에도 오면 북간도에 아름다운 하나에 그러나 보고, 이름을 책상을 봅니다. 밤을 노새, 가득 가을로 별을 새겨지는 못 계십니다. 
+                하나에 위에 가을 속의 불러 별 다하지 듯합니다. 당신은 풀이 같이 걱정도 써 이름을 것은 가득 까닭입니다. 까닭이요, 까닭이요, 말 소녀들의 속의 노새, 오는 버리었습니다. 
+                그러나 밤이 별을 버리었습니다.
+            </p>
+        </div>
+    </div>
+    <hr>
+    copyright &copy; 2021 BYJ
+</body>
 </html>

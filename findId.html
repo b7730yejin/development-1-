@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디/비밀번호 찾기</title>
-    <link rel="stylesheet" href="CSS/findId.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="/CSS/findId.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
 </head>
-<script type="text/javascript" src="JS/index.js"></script>
+<script type="text/javascript" src="/JS/index.js"></script>
 
 <body>
     <!--페이지 헤더-->
@@ -18,12 +19,12 @@
         <!--로그인/회원가입 영역-->
         <div class="login-area">
             <a href="#" class="loginLink" onclick="openLogin();">로그인</a>
-            <a href="join.html" class="joinLink">회원가입</a>
+            <a href="/join.html" class="loginLink">회원가입</a>
         </div>
         <!--타이틀 로고 이미지 영역-->
         <div class="title-area">
-            <a href="index.html">
-                <img src="https://github.com/b7730yejin/imagesource/blob/main/better_coffee.png?raw=true"
+            <a href="/index.html">
+                <img src="https://github.com/b7730yejin/imagesource/blob/main/title.png?raw=true"
                     class="title_img" alt="타이틀" usemap="#title_map">
             </a>
         </div>
@@ -34,21 +35,40 @@
         </div>
     </div>
 
-    <!--메뉴-->
-    <div class="menu-area"></div>
+     <!--메뉴-->
+     <div class="menu-area">
+        <div class="center">
+            <div class="story">
+                <button class="menu_button">카페 소식</button>
+            </div>
+            <div class="cf_menu">
+                <button class="menu_button">카페 메뉴</button>
+            </div>
+            <div class="info">
+                <button class="menu_button">매장 안내</button>
+            </div>
+            <div class="order">
+                <button class="menu_button">온라인 주문</button>
+            </div>
+            <div class="customer">
+                <button class="menu_button">고객 지원</button>
+            </div>
+        </div>
+    </div>
 
     <!--아이디/ 비번 찾기 제목-->
     <div class="findId_head">
+        <hr>
         <h1>아이디/비밀번호 찾기</h1>
     </div>
 
     <!--아이디/ 비번 찾기 하이퍼링크-->
     <div class="findId_select">
         <div class="select_id">
-            <a href="findId.html" class="f_link">아이디 찾기</a>
+            <a href="/findId.html" class="f_link">아이디 찾기</a>
         </div>
         <div class="select_pwd">
-            <a href="findPwd.html" class="f_link">비밀번호 찾기</a>
+            <a href="/findPwd.html" class="f_link">비밀번호 찾기</a>
         </div>
     </div>
 
