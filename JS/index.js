@@ -1,9 +1,11 @@
 var timeOut; // clearTimeout() 함수를 이용하여 Timeout 을 취소하기위해 사용됨
         
     var ImgArray = new Array ();
-    ImgArray[1] = "https://github.com/b7730yejin/imagesource/blob/main/img1.jpg?raw=true";
-    ImgArray[2] = "https://github.com/b7730yejin/imagesource/blob/main/img2.jpg?raw=true";
-    ImgArray[3] = "https://github.com/b7730yejin/imagesource/blob/main/img3.jpg?raw=true";
+    ImgArray[1] = "https://github.com/b7730yejin/imagesource/blob/main/coffee1.jpg?raw=true";
+    ImgArray[2] = "https://github.com/b7730yejin/imagesource/blob/main/coffee2.jpg?raw=true";
+    ImgArray[3] = "https://github.com/b7730yejin/imagesource/blob/main/coffee3.jpg?raw=true";
+    ImgArray[4] = "https://github.com/b7730yejin/imagesource/blob/main/coffee4.jpg?raw=true";
+
 
     var imgNum = 0;	
 
@@ -12,12 +14,12 @@ var timeOut; // clearTimeout() 함수를 이용하여 Timeout 을 취소하기�
 
 		if( imgNum < ImgArray.length ) { // 배열의 갯수 이내일때만 실행
 			banner.src = ImgArray[imgNum];		 
-			timeOut = setTimeout("ShowDefaultRotate()",1000);  // 1초후에 자기자신을 호출 
+			timeOut = setTimeout("ShowDefaultRotate()",4000);  // 1초후에 자기자신을 호출 
 		}
 
 		else{
 			imgNum=0;
-			timeOut = setTimeout("ShowDefaultRotate()",1000); // 1초후에 자기자신을 호출 
+			timeOut = setTimeout("ShowDefaultRotate()",4000); // 1초후에 자기자신을 호출 
 		}		
 	}
 
@@ -25,9 +27,18 @@ var timeOut; // clearTimeout() 함수를 이용하여 Timeout 을 취소하기�
     
 
 //검색 버튼 클릭시 
+
 function menu_search(){
-    alert("확인");
+    
+    var a = input.value;
+   
+    var str = document.getElementById('text');
+    
+    var str2 = str.innerHTML.replace(a, '<mark>'+ a + '</mark>');
+
+    str.innerHTML = str2;
 }
+
 //로그인 팝업창 열기
 function openLogin(){
     window.open("login.html", "a", "width=400, height=255, left=300, top=300" );
