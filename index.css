@@ -1,0 +1,222 @@
+
+/*구글 폰트&아이콘*/
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+html{
+    margin: 0;
+}
+/*헤더 영역*/
+#header{
+    display: grid;
+    height: 150px;
+    width: 1890px;
+    grid-template-columns: repeat(3, 630px);
+    grid-template-areas: 
+    "login-area title-area search-area";
+}
+/*로그인*/
+.login_area{
+    margin-top: 100px;
+    grid-area: login-area;
+    margin-left: 70px;
+}
+/*로그인&회원가입 하이퍼링크 설정*/
+a.loginLink{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+a.loginLink:link{
+    color:  rgb(70, 69, 69);
+}
+a.loginLink:visited{
+    color:  rgb(70, 69, 69);
+}
+a.loginLink:hover{
+    color: rgb(192, 161, 136);
+}
+
+/*타이틀*/
+.title_area{
+    grid-area: title-area;
+    text-align: center;
+    padding-top: 20px;
+}
+/*타이틀 이미지 설정*/
+#title_img{
+    width: 250px;
+    height: 100px; 
+    line-height: 100px;   
+    object-fit: contain;
+}
+/*검색창*/
+.search_area{
+    grid-area: search-area;
+    height: 32px;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 335px;
+    border: 2px solid rgb(126, 126, 139);
+    background: white;
+}
+/*검색창 설정*/
+#search_input{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 24px;
+    width : 200px;
+    height: 30px;
+    border: 0px;
+    outline: none;
+    margin-left: 5px;
+}
+/*검색창 버튼 설정*/
+#search_button{
+    font-size: 20px;
+    width: 35px;
+    height: 100%;
+    border : 0px;
+    outline: none;
+    background: rgb(126, 126, 139);
+    color: white;
+    float: right;
+    cursor: pointer;
+    padding-top: 4px;
+}
+
+
+/*메뉴 설정*/
+#menu_area{
+    width: 1300px;
+    height: 60px;
+    display: flex;
+    margin: 0 400px;
+}
+.main_menu li{
+    width: 200px;
+    height: 45px; 
+    line-height: 45px;
+    float: left;
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.main_menu > li:hover #sub_menu {
+    opacity: 1;
+    visibility: visible;
+    border-top: 3px solid rgb(194, 48, 48);
+}
+.main_menu a{
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#sub_menu{
+    position: absolute;
+    background: rgba(250, 250, 250, 0.527);
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    text-align: left;
+}
+#sub_menu li{
+    font-size: 16px;  
+    padding: 10px 0;
+    border: 0;
+}
+.main_menu a:hover{
+    color: green;
+}
+.main_menu a{
+    color: rgb(95, 66, 41);
+    font-weight: bold;
+}
+#last_menu{
+    border-right: hidden;
+}
+
+
+/*이미지 영역*/
+#img_area{
+   
+    height: 500px;
+    width: 1890px;
+    text-align: center; 
+}
+/*배너 이미지*/
+#banner{
+    width: 1890px;;
+    height: 500px;
+    object-fit: cover;
+}
+/*이전 이미지, 다음 이미지 버튼*/
+button.change_img{
+    margin-right: 5px;
+    position: relative;
+    top: -50px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white; 
+}
+/*이전 이미지, 다음 이미지 버튼에 커서를 올리면*/
+button.change_img:hover{
+    color: rgb(192, 161, 136);
+}
+
+/*본문 영역*/
+#text_area{
+    height: 500px;
+    width: 1890px;
+}
+#text_area h1{
+    margin-left: 44%;
+    font-family: 'Gamja Flower', cursive;
+}
+#text_area p{
+    margin: 0 auto;
+    height: 100%;
+    width: 800px;
+    
+}
+
+
+

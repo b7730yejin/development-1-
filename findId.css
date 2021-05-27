@@ -1,0 +1,94 @@
+
+/*아이디/비밀번호 선택 하이퍼링크 영역*/
+#find_select{
+    margin: 0 700px; 
+    display: grid;
+    width: 450px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "select_id select_pwd";
+   
+}
+/*아이디 선택시 활성*/
+.select_id{
+    grid-area: select_id;
+    height: 30px;
+    border-top: 2px solid rgb(202, 199, 199);
+    border-left: 2px solid rgb(202, 199, 199);
+    border-right: 2px solid rgb(202, 199, 199);;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.select_pwd{
+   
+    grid-area: select_pwd;
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 2px solid rgb(202, 199, 199);;
+    padding-top: 20px;
+    text-align: center;
+}
+#find_select a{
+    text-decoration: none; 
+    font-weight: bold;
+}
+#find_select a:link{
+    color:  rgb(70, 69, 69);
+}
+#find_select a:visited{
+    color:  rgb(70, 69, 69);
+}
+#find_select a:hover{
+    color: rgb(192, 161, 136);
+}
+/*정보 입력 영역*/
+#find_info{
+    margin: 0 700px;
+    width: 446px;
+    height: 150px;
+    border-bottom: 2px solid rgb(202, 199, 199);
+    border-left: 2px solid rgb(202, 199, 199);
+    border-right: 2px solid rgb(202, 199, 199);
+    padding-top: 50px;
+}
+#find_info li{
+    list-style: none;
+   
+}
+#find_info input{
+    margin: 0 0 10px 20px;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(221, 221, 221);
+}
+#find_info input::placeholder{
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+#find_info #u_email {
+    width: 290px;
+}
+#find_info #e_domain {
+    width: 105px;
+    height: 32px;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid rgb(221, 221, 221);
+    background: rgba(128, 128, 128, 0.151);
+}
+
+#find_info button{
+    margin: 0 20px;
+    height: 35px;
+    border: 0;
+    width: 405px;
+    font-weight: bold;
+    font-size: 15px;
+}
+hr{
+    margin-top: 300px;
+}
