@@ -1,0 +1,20 @@
+#contents_area{
+    display: grid;
+   
+    grid-template-columns: 300px 100%;
+    grid-template-areas: 
+    "list_section main_text";
+}
+
+.list_section{
+    grid-area: 'list_section';
+    border-right: 3px solid gray;
+   
+}
+.list_section li{
+    list-style: none;
+}
+.main_text{
+    grid-area: 'main_text';
+    background-color: yellow;
+}

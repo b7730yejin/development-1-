@@ -12,18 +12,19 @@
 }
 /*헤드 이미지*/
 #head_img {
-    margin: 0 300px;
+    margin: 0 335px;
     width: 1200px;
     height: 100%;
     object-fit: cover;
     
 }
+/*
 #HeadTitle{
     margin: 0 550px;
     width: 800px;
     height: 100px;
     position: relative;
-    top: -190px;
+    top: 245px;
     background-color: rgba(0, 0, 0, 0.637);  
     text-align: center;
     line-height: 90px;
@@ -31,8 +32,10 @@
 #HeadTitle h1{
     font-weight: normal;
     font-size: 30px;
+    
     color: rgb(255, 255, 255);
-}
+}*/
+
 .join_area{
     display: grid;
     height: 1000px;
@@ -55,7 +58,7 @@
 /*외부 테두리 설정*/
 .join_area fieldset {
     position: relative;
-    top: -60px;
+    top: 100px;
     margin: 0 auto;
     padding: 0;
     height: 650px;

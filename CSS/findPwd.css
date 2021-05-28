@@ -1,8 +1,7 @@
-body{height: 1165;}
 
 /*아이디/비밀번호 선택 하이퍼링크 영역*/
 #find_select{
-    margin: 0 700px; 
+    margin: 100px 0 0 700px; 
     display: grid;
     width: 450px;
     grid-template-columns: 50% 50%;
