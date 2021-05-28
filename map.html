@@ -1,4 +1,4 @@
-<!--아이디 찾기 창-->
+<!--회원가입 창-->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -6,17 +6,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디/비밀번호 찾기</title>
-    <link rel="stylesheet" href="CSS/findId.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <title>Better Coffee 회원가입</title>
+    <link rel="stylesheet" href="CSS/map.css">
     <link rel="stylesheet" href="CSS/join.css">
+    <link rel="stylesheet" href="CSS/index.css">
 
     <!--구글 폰트, 아이콘 적용-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
 </head>
 
 <script type="text/javascript" src="JS/index.js"></script>
@@ -45,12 +44,13 @@
         </div>
     </div>
 
-     <!--상단 메뉴-->
-     <div id="menu_area">
+    <!--상단 메뉴-->
+    <div id="menu_area">
         <ul class="main_menu">
             <li><a href="#">카페 이야기</a>
                 <ul id="sub_menu">
                     <li><a href="#" aria-label="submenu">카페 소개</a></li>
+                    <li><a href="#" aria-label="submenu">카페 현황</a></li>
                     <li><a href="map.html" aria-label="submenu">카페 오시는 길</a></li>
                     <li><a href="#" aria-label="submenu">히스토리</a></li>
                 </ul>
@@ -60,6 +60,7 @@
                     <li><a href="#" aria-label="submenu">시즌 메뉴</a></li>
                     <li><a href="#" aria-label="submenu">음료 메뉴</a></li>
                     <li><a href="#" aria-label="submenu">디저트 메뉴</a></li>
+                    <li><a href="#" aria-label="submenu">기타 상품</a></li>
                 </ul>
             </li>
             <li><a href="#">커뮤니티</a>
@@ -79,46 +80,20 @@
         </ul>
     </div>
 
-    <!--헤드 이미지-->
-    <div id="head_title">
-        <img id="head_img" src="https://github.com/b7730yejin/imagesource/blob/main/coffee_findId.jpg?raw=true">
+     <!--헤드 이미지-->
+     <div id="head_title">
+        <img id="head_img" src="https://github.com/b7730yejin/imagesource/blob/main/coffee5.jpg?raw=true">
     </div>
 
-    
-
-    <!----------------------------------------safe line----------------------------------------------->
-
-    <!--아이디/ 비번 찾기 하이퍼링크-->
-    <div id="find_select">
-        <div class="select_id">
-            <a href="findId.html" class="f_link">아이디 찾기</a>
+    <!--------------------------------cut line---------------------------------------------->
+    <div id="contents_area">
+        <div class="list_section">
+            <ul>
+                <li><a href="#" aria-label="submenu">카페 소개</a></li>
+                <li><a href="#" aria-label="submenu">카페 현황</a></li>
+                <li><a href="map.html" aria-label="submenu">카페 오시는 길</a></li>
+                <li><a href="#" aria-label="submenu">히스토리</a></li>
+            </ul>
         </div>
-        <div class="select_pwd">
-            <a href="findPwd.html" class="f_link">비밀번호 찾기</a>
-        </div>
+        <div class="main_text">hi</div>
     </div>
-
-    <div id="find_info">
-            <li>
-                <input type="text" class="info_name" placeholder="이름" autofocus required>
-            </li>
-            <li>
-                <input type="email" id="u_email" placeholder="이메일" required>
-                <select id="e_domain" onchange="domainSelect();">
-                    <option value="0">직접입력</option>
-                    <option value="naver.com">naver.com</option>
-                    <option value="duam.net">duam.net</option>
-                    <option value="hanmail.net">hanmail.net</option>
-                    <option value="gmail.com">gmail.com</option>
-                    <option value="nate.com">nate.com</option>
-                    <option value="yahoo.com">yahoo.com</option>
-                </select>
-            </li>
-            <li>
-                <button onclick="id_ok();">확인</button>
-            </li>
-    </div>
-    <hr>copyright &copy; 2021 BYJ
-</body>
-
-</html>
